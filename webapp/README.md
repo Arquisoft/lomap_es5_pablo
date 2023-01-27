@@ -44,13 +44,13 @@ docker-compose down
 ### Continuous integration/Continuous Delivery
 In this step we are going to setup GitHub Actions in order to have CI in our system. The idea is that, every time we create a new release, build the system (restapi and webapp), run the tests, and if everything is ok, build the docker images and upload them to Github packages. Then we can deploy the application using these images.
 
-The workflow for this is in [asw2223.yml](.github/workflow/asw2223.yml). In this file you can see that there are two jobs, one for the restapi, one for the webapp. Jobs are executed in pararel so this will speed up our build.
+The workflow for this is in [lomap_0.yml](.github/workflow/lomap_0.yml). In this file you can see that there are two jobs, one for the restapi, one for the webapp. Jobs are executed in paralel so this will speed up our build.
 
 So, the first to jobs in this file build the webapp and the restapi (in parallel). If everything goes well, check the e2e tests (later in this document) and if these acceptance tests pass ok, create the docker images and deploy them.
 
 
 ### E2E testing
-Integration tests is maybe the most difficult part to integrate in our system. We have to test the system as a whole. The idea here is to deploy the system and make the tests using [jest-puppeteer](https://github.com/smooth-code/jest-puppeteer) (browser automatization) and [jest-cucumber](https://www.npmjs.com/package/jest-cucumber) (user stories). We will also be using [expect-puppeteer](https://www.npmjs.com/package/expect-puppeteer) to make easier the test writing. All the structure needed is under the `webapp/e2e` directory. This tests can be run locally using `npm run test:e2e` and they will be run also in GitHub Actions, just after the unitary tests. 
+Integration tests is maybe the most difficult part to integrate in our system. We have to test the system as a whole. The idea here is to deploy the system and make the tests using [jest-puppeteer](https://github.com/smooth-code/jest-puppeteer) (browser automatization) and [jest-cucumber](https://www.npmjs.com/package/jest-cucumber) (user stories). We will also be using [expect-puppeteer](https://www.npmjs.com/package/expect-puppeteer) to make easier the test writing. All the structure needed is under the `webapp/e2e` directory. These tests can be run locally using `npm run test:e2e` and they will be run also in GitHub Actions, just after the unitary tests. 
 
 In this project the E2E testing user stories are defined using Cucumber. Cucumber uses a language called Gherkin to define the user stories. You can find the example in the `features` directory. Then, the actual tests are in the folder `steps`. We are going to configure jest to execute only the tests of this directory (check the `jest.config.ts` file). 
 
