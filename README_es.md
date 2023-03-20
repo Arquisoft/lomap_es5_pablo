@@ -21,7 +21,7 @@ Si quieres ejecutar el proyecto necesitarás [git](https://git-scm.com/downloads
 ```bash
 docker-compose up --build
 ```
-Este comando creará dos imágenes de docker si no existen en tu equipo (la webapp y la restapi) y lanzará un contenedor de mongoDB. Además lanzará contenedores de Prometheus y Grafana para monitorizar el servicio web. Deberías ser capaz de acceder a todo desde aquí:
+Este comando creará dos imágenes de docker si no existen en tu equipo (la webapp y la restapi) y lanzará un contenedor de mongoDB. Además lanzará contenedores de Prometheus y Grafana para monitorizar el servicio web. Deberías ser capaz de acceder a todo desde estas URLs:
 
  - [Webapp - http://localhost:3000](http://localhost:3000)
  - [Ejemplo llamada a RestApi - http://localhost:5000/api/users/list](http://localhost:5000/api/users/list)
