@@ -10,7 +10,6 @@
 <img src="https://miro.medium.com/max/365/1*Jr3NFSKTfQWRUyjblBSKeg.png" height="100">
 </p>
 
-
 This project is a basic example of website using **React** with **Typescript** and an endpoint using **NodeJS** with **express**.
 
 ## Quick start guide
@@ -247,6 +246,7 @@ Now this Dockerfile has an argument (with a default value) that will create the 
 ```typescript
 app.use(cors());
 ```
+
 ### Creating a new release
 
 Everything is ready now to make the deploy. For that we need to create a new release. That will fire up the deployment process that we have just configured:
@@ -255,6 +255,3 @@ Everything is ready now to make the deploy. For that we need to create a new rel
 After the actions process is finished, we can access the application using the IP of our virtual machine in port 3000. Note that is very simple to modify the application to work in port 80 instead. We only need to open that port and configure react to use this port instead.
 
 ![image](https://user-images.githubusercontent.com/10683040/155297402-41c09d54-8160-4832-be04-21951d18bc28.png)
-
-
-
