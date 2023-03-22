@@ -1,7 +1,0 @@
-{
-  "name": "lomap_0",
-  "workspaces": [
-    "webapp",
-    "restapi"
-  ]
-}
