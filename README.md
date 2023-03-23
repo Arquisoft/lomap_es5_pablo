@@ -1,8 +1,10 @@
 # lomap_0
 
-[![CI](https://github.com/Arquisoft/lomap_0/actions/workflows/ci.yml/badge.svg)](https://github.com/Arquisoft/lomap_0/actions/workflows/ci.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Arquisoft_lomap_0&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Arquisoft_lomap_0)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Arquisoft_lomap_0&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Arquisoft_lomap_0)
+[![CI](https://github.com/Arquisoft/lomap_es5_pablo/actions/workflows/ci.yml/badge.svg)](https://github.com/Arquisoft/lomap_es5_pablo
+/actions/workflows/ci.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Arquisoft_lomap_es5_pablo
+&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Arquisoft_lomap_es5_pablo)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Arquisoft_lomap_es5_pablo&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Arquisoft_lomap_es5_pablo)
 
 <p float="left">
 <img src="https://blog.wildix.com/wp-content/uploads/2020/06/react-logo.jpg" height="100">
